@@ -15,6 +15,7 @@ const createDate = (dates, index) => {
   })
   
   return (typeof(index) == 'number') ? dateParsed[index] : dateParsed.sort().join("-")
+};
 
 // ! JANGAN DIMODIFIKASI
 (() => {
