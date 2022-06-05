@@ -8,10 +8,10 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = (tgl, index) => {
-  if (index !== undefined) {
+const createDate = (tgl, index_date) => {
+  if (index_date !== undefined) {
     urut = tgl.sort();
-    data = urut[index];
+    data = urut[index_date];
     return Date.parse(data) / 1000;
   }
   urut = tgl.sort();
