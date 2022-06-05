@@ -8,16 +8,16 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = (tgl, index_date) => {
-  if (index_date !== undefined) {
-    urut = tgl.sort();
-    data = urut[index_date];
+const createDate = (da, idx) => {
+  if (idx !== undefined) {
+    sortt = da.sort();
+    data = sortt[idx];
     return Date.parse(data) / 1000;
   }
-  urut = tgl.sort();
+  sortt = da.sort();
   parsed = [];
-  for (i = 0; i < urut.length; i++) {
-    parsed.push(Date.parse(urut[i]) / 1000);
+  for (i = 0; i < sortt.length; i++) {
+    parsed.push(Date.parse(sortt[i]) / 1000);
   }
   return parsed.sort().join("-").toString();
 };
